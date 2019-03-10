@@ -11,9 +11,8 @@ I have added target configuration for Trix in: https://github.com/idebruijn/prom
 HOST: use your <Host IP Address> not localhost, because Trix in not running in the network.
 PORT: port of Trix is (default 8080)
 
-
-### Start up:
-$ HOSTNAME=$(hostname) docker stack deploy -c docker-stack.yml prom
+### Start up cmd:
+HOSTNAME=$(hostname) docker stack deploy -c docker-stack.yml prom
 
 ### Log in Grafana:
 Cccessible via: http://<Host IP Address>:3000 for example http://192.168.10.1:3000
@@ -21,5 +20,7 @@ Cccessible via: http://<Host IP Address>:3000 for example http://192.168.10.1:30
 username - admin
 password - foobar (Password is stored in the `/grafana/config.monitoring` env file)
 
-### Shut down:
+### Shut down cmd:
 docker stack rm prom
+
+### Location JSON file: TODO

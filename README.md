@@ -16,7 +16,7 @@ I have added target configuration for Trix in: https://github.com/idebruijn/prom
 
 ```
 HOST: use your <Host IP Address> not localhost, because Trix in not running in the network.
-PORT: port of Trix is (default 8080)
+PORT: port of Trix is (default 8084)
 ```
 
 ### 2: Start up cmd
